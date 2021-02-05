@@ -156,11 +156,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\donut_game\ball.cpp" />
+    <ClCompile Include="src\donut_game\donut.cpp" />
     <ClCompile Include="tests\test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\donut_game\ball.h" />
+    <ClInclude Include="src\donut_game\donut.h" />
     <ClInclude Include="src\donut_game\donut_question.h" />
+    <ClInclude Include="src\utils\globals.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

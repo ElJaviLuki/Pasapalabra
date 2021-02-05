@@ -21,12 +21,21 @@
     <ClCompile Include="src\donut_game\ball.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\donut_game\donut.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\donut_game\ball.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\donut_game\donut_question.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\donut_game\donut.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\globals.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
