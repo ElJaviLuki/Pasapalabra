@@ -97,7 +97,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)Pasapalabra\src;$(SolutionDir)Pasapalabra\externals</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Pasapalabra\src;$(SolutionDir)Pasapalabra\externals;$(SolutionDir)Pasapalabra\externals\rapidjson\include;$(SolutionDir)Pasapalabra\externals\cpp-httplib</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -113,7 +113,7 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)Pasapalabra\src;$(SolutionDir)Pasapalabra\externals</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Pasapalabra\src;$(SolutionDir)Pasapalabra\externals;$(SolutionDir)Pasapalabra\externals\rapidjson\include;$(SolutionDir)Pasapalabra\externals\cpp-httplib</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -129,7 +129,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)Pasapalabra\src;$(SolutionDir)Pasapalabra\externals</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Pasapalabra\src;$(SolutionDir)Pasapalabra\externals;$(SolutionDir)Pasapalabra\externals\rapidjson\include;$(SolutionDir)Pasapalabra\externals\cpp-httplib</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -145,7 +145,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)Pasapalabra\src;$(SolutionDir)Pasapalabra\externals</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Pasapalabra\src;$(SolutionDir)Pasapalabra\externals;$(SolutionDir)Pasapalabra\externals\rapidjson\include;$(SolutionDir)Pasapalabra\externals\cpp-httplib</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -157,6 +157,9 @@
   <ItemGroup>
     <ClCompile Include="src\donut_game\ball.cpp" />
     <ClCompile Include="src\donut_game\donut.cpp" />
+    <ClCompile Include="src\utils\split.cpp" />
+    <ClCompile Include="src\utils\trim.cpp" />
+    <ClCompile Include="src\web_service\web_service.cpp" />
     <ClCompile Include="tests\test.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -164,6 +167,9 @@
     <ClInclude Include="src\donut_game\donut.h" />
     <ClInclude Include="src\donut_game\donut_question.h" />
     <ClInclude Include="src\utils\globals.h" />
+    <ClInclude Include="src\utils\split.h" />
+    <ClInclude Include="src\utils\trim.h" />
+    <ClInclude Include="src\web_service\web_service.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

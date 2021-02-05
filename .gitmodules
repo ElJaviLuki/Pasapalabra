@@ -1,0 +1,6 @@
+[submodule "Pasapalabra/externals/cpp-httplib"]
+	path = Pasapalabra/externals/cpp-httplib
+	url = https://github.com/yhirose/cpp-httplib
+[submodule "Pasapalabra/externals/rapidjson"]
+	path = Pasapalabra/externals/rapidjson
+	url = https://github.com/Tencent/rapidjson
