@@ -22,4 +22,4 @@
 namespace WebService
 {
 	[[nodiscard]] DonutGame::DonutQuiz getDonutQuiz(const uint& donutID);
-}
+} // namespace WebService

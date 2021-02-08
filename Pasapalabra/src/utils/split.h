@@ -16,4 +16,4 @@
 namespace Utils
 {
 	std::vector<std::string> split(const std::string& origin, const std::string& delim);
-}
+} // namespace Utils

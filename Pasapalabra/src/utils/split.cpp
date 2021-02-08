@@ -30,4 +30,4 @@ namespace Utils
 			else return ret;
 		} while (true);
 	}
-}
+} // namespace Utils

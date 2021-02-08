@@ -1,6 +1,9 @@
 /*
 	trim.cpp
 	Author: F. Javier L. Cacenave - @ElJaviLuki
+	
+	TODO:
+	· Would we need to 'inline' these functions?
 */
 
 #include "trim.h"
@@ -60,9 +63,4 @@ namespace Utils
 		trimRight(input);
 		trimLeft(input);
 	}
-}
-
-/*
-	TODO:
-	· Would we need to 'inline' these functions?
-*/
+} // namespace Utils

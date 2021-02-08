@@ -17,4 +17,4 @@ namespace DonutGame
 	};
 
 	using DonutQuiz = std::vector<DonutQuestion>;
-}
+} // namespace DonutGame

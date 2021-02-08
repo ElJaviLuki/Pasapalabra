@@ -60,4 +60,4 @@ namespace DonutGame
 		uint numFails = 0;
 		uint numPending = alphabet.size();
 	};
-}
+} // namespace DonutGame

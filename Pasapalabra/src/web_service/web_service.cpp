@@ -6,7 +6,6 @@
 	· Implement HTTPS support
 	· Implement support for Spanish characters.
 	· Connection error handling
-	· Namespace
 */
 
 #pragma once
@@ -44,4 +43,4 @@ namespace WebService
 
 		return donutJson;
 	}
-}
+} // namespace WebService

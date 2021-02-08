@@ -42,4 +42,4 @@ namespace DonutGame
 		DonutQuestion question;
 		Result result;
 	};
-}
+} // namespace DonutGame

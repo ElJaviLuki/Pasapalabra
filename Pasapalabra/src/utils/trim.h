@@ -15,4 +15,4 @@ namespace Utils
 	void trimRight(std::string&);
 
 	void trimLeft(std::string&);
-}
+} // namespace Utils

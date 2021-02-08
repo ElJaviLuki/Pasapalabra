@@ -29,4 +29,4 @@ namespace DonutGame
 	void Ball::setFail() noexcept {	result = Result::Fail; }
 
 	void Ball::setPending() noexcept { result = Result::Pending; }
-}
+} // namespace DonutGame

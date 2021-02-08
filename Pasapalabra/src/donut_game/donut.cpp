@@ -71,4 +71,4 @@ namespace DonutGame
 	void Donut::setFail(const uint& numBall) noexcept { setResult(numBall, Ball::Result::Fail); }
 
 	void Donut::setPending(const uint& numBall) noexcept { setResult(numBall, Ball::Result::Pending); }
-}
+} // namespace DonutGame
