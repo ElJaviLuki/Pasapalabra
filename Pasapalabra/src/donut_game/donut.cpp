@@ -53,7 +53,7 @@ namespace DonutGame
 				case Ball::Result::Correct: numCorrects--; break;
 				case Ball::Result::Fail: numFails--; break;
 				case Ball::Result::Pending: numPending--; break;
-				default: break; //TODO: Unreachable code
+				[[unlikely]] default: break; //TODO: Unreachable code
 			}
 
 			switch (newResult)
@@ -61,7 +61,7 @@ namespace DonutGame
 				case Ball::Result::Correct: numCorrects++; break;
 				case Ball::Result::Fail: numFails++; break;
 				case Ball::Result::Pending: numPending++; break;
-				default: break; //TODO: Unreachable code
+				[[unlikely]] default: break; //TODO: Unreachable code
 			}
 		}
 	}

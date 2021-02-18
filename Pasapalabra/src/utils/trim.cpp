@@ -10,11 +10,9 @@
 
 namespace Utils
 {
-	using StringIterator = std::_String_iterator<std::_String_val<std::_Simple_types<char>>>;
-
 	[[nodiscard]] inline bool isSpace(const char& iterator) noexcept { return iterator == ' '; }
 
-	StringIterator trimEnd(StringIterator inBegin, StringIterator inEnd)
+	std::string::iterator trimEnd(std::string::iterator inBegin, std::string::iterator inEnd)
 	{
 		for (auto iterator = inEnd; iterator != inBegin;)
 		{
@@ -27,7 +25,7 @@ namespace Utils
 		return inBegin;
 	}
 
-	StringIterator trimBegin(StringIterator inBegin, StringIterator inEnd)
+	std::string::iterator trimBegin(std::string::iterator inBegin, std::string::iterator inEnd)
 	{
 		auto iterator = inBegin;
 

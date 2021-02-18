@@ -43,6 +43,7 @@ namespace DonutGame
 		void setCorrect(const uint& numBall) noexcept;
 		void setFail(const uint& numBall) noexcept;
 		void setPending(const uint& numBall) noexcept;
+
 	private:
 		/*
 			'alphabet'
@@ -53,11 +54,11 @@ namespace DonutGame
 			· It's -so far- declared inside the 'Donut' scope, since we do not currently have plans to use it in other places, but this might change.
 				Read: https://stackoverflow.com/questions/58918668/where-to-define-compile-time-constants
 		*/
-		constexpr static std::string_view alphabet = "ABCDEFGHIJLMNÑOPQRSTUVXYZ";
+		constexpr static std::string_view alphabet{ "ABCDEFGHIJLMNÑOPQRSTUVXYZ" };
 
 		std::vector<Ball> balls;
-		uint numCorrects = 0;
-		uint numFails = 0;
-		uint numPending = alphabet.size();
+		uint numCorrects{ 0 };
+		uint numFails{ 0 };
+		uint numPending{ alphabet.size() };
 	};
 } // namespace DonutGame

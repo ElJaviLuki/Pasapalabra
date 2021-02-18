@@ -6,6 +6,7 @@
 	· Implement HTTPS support
 	· Implement support for Spanish characters.
 	· Connection error handling
+	· Can donutID uint converted to std::string at compile time?
 */
 
 #pragma once
@@ -14,17 +15,17 @@
 
 namespace WebService
 {
+	/* Why is this function not inlined? */
 	[[nodiscard]] inline httplib::Result downloadDonut(const uint& donutID)
 	{
-
-#ifdef CPPHTTPLIB_OPENSSL_SUPPORT
-		const char* host{ "https://atreslab.com" };
-#else
-		const char* host{ "http://atreslab.com" };
-#endif
-
-		return httplib::Client(host)
-			.Get(("/modulosblancos/" + std::to_string(donutID) + "/").c_str());
+		return httplib::Client(
+			/* Host */
+			#ifdef CPPHTTPLIB_OPENSSL_SUPPORT
+						"https://atreslab.com"
+			#else
+						"http://atreslab.com"
+			#endif
+		).Get(("/modulosblancos/" + std::to_string(donutID) + "/").c_str());
 	}
 
 	DonutGame::DonutQuiz getDonutQuiz(const uint& donutID)
