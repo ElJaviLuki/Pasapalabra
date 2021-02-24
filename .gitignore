@@ -341,4 +341,4 @@ healthchecksdb
 
 # Pasapalabra specific ignore files/directories
 ## Ignore 'tests' folder
-/Pasapalabra/tests
+/donutgame/tests

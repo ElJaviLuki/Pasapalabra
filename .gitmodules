@@ -1,6 +1,7 @@
-[submodule "Pasapalabra/externals/cpp-httplib"]
-	path = Pasapalabra/externals/cpp-httplib
-	url = https://github.com/yhirose/cpp-httplib
-[submodule "Pasapalabra/externals/rapidjson"]
-	path = Pasapalabra/externals/rapidjson
+# 'donutgame' submodules
+[submodule "donutgame/externals/rapidjson"]
+	path = donutgame/externals/rapidjson
 	url = https://github.com/Tencent/rapidjson
+[submodule "donutgame/externals/cpp-httplib"]
+	path = donutgame/externals/cpp-httplib
+	url = https://github.com/yhirose/cpp-httplib
