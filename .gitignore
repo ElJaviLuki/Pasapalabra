@@ -340,5 +340,4 @@ ASALocalRun/
 healthchecksdb
 
 # Pasapalabra specific ignore files/directories
-## Ignore 'tests' folder
-/donutgame/tests
+# Place here the ignores you need.
