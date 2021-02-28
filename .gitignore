@@ -339,5 +339,20 @@ ASALocalRun/
 # BeatPulse healthcheck temp database
 healthchecksdb
 
+# CMake ignores
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps
+[Oo]ut/
+[Bb]uild/
+
 # Pasapalabra specific ignore files/directories
 # Place here the ignores you need.

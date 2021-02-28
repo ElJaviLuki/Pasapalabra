@@ -1,7 +1,6 @@
-# 'donutgame' submodules
-[submodule "donutgame/externals/rapidjson"]
-	path = donutgame/externals/rapidjson
+[submodule "externals/rapidjson"]
+	path = externals/rapidjson
 	url = https://github.com/Tencent/rapidjson
-[submodule "donutgame/externals/cpp-httplib"]
-	path = donutgame/externals/cpp-httplib
+[submodule "externals/cpp-httplib"]
+	path = externals/cpp-httplib
 	url = https://github.com/yhirose/cpp-httplib
