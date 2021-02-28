@@ -17,7 +17,7 @@
 #pragma once
 
 #include "ball.h"
-#include "../utils/globals.h"
+#include "utils/globals.h"
 
 #include <string_view>
 #include <vector>
