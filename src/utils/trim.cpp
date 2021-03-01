@@ -14,14 +14,17 @@ namespace Utils
 
 	std::string::iterator trimEnd(std::string::iterator inBegin, std::string::iterator inEnd)
 	{
-		for (auto iterator = inEnd; iterator != inBegin;)
 		{
-			if (!isSpace(*(--iterator)))
+			auto iterator = inEnd;
+			while (iterator != inBegin)
 			{
-				return ++iterator;
+				if (!isSpace(*(--iterator)))
+				{
+					return ++iterator;
+				}
 			}
 		}
-
+		
 		return inBegin;
 	}
 
@@ -29,7 +32,8 @@ namespace Utils
 	{
 		auto iterator = inBegin;
 
-		while (iterator != inEnd && isSpace(*iterator))
+		while (iterator != inEnd 
+			&& isSpace(*iterator))
 		{
 			++iterator;
 		}
@@ -53,7 +57,8 @@ namespace Utils
 			std::begin(input),
 			trimBegin(
 				std::begin(input),
-				std::end(input)));
+				std::end(input))
+		);
 	}
 
 	void trim(std::string& input)
